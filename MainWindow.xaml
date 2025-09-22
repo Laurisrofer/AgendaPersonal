@@ -30,17 +30,24 @@
 
         <!-- Menú lateral con botones -->
         <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Top" >
-            <Button Content="Menú" Margin="5" Height="40"/>
-            <Button Content="Contactos" Margin="5" Height="40"/>
-            <Button Content="Citas" Margin="5" Height="40"/>
+            <Button Content="Menú" Margin="5" Height="40" Click="Button_Click_1"/>
+            <Button Content="Contactos" Margin="5" Height="40" Click="Button_Click"/>
+            <Button Content="Citas" Margin="5" Height="40" Click="Button_Click_2"/>
         </StackPanel>
 
-        <!-- Panel de contenido (parte derecha) -->
+        <Frame
+            Grid.Row="1"
+            Grid.Column="1"
+            x:Name="MainFrame"
+            NavigationUIVisibility="Hidden"
+        />
+
+        <!-- Panel de contenido (parte derecha) --><!--
         <Border Grid.Row="1" Grid.Column="1" BorderBrush="Gray" BorderThickness="1" Margin="10">
             <TextBlock Text="Sección Contactos"
                        VerticalAlignment="Center"
                        HorizontalAlignment="Center"
-                       FontSize="16"/>
-        </Border>
+                       FontSize="16"/>--><!--
+        </Border>-->
     </Grid>
 </Window>

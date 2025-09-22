@@ -20,5 +20,20 @@ namespace AgendaPersonal
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Contactos());
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Menu());
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new Citas());
+        }
     }
 }
