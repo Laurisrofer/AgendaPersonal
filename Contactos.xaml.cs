@@ -23,6 +23,21 @@ namespace AgendaPersonal
         public Contactos()
         {
             InitializeComponent();
+
+            //Asignar una lista con valores por defecto
+            List<Contacto> ListaContactos = new List<Contacto>
+            {
+                new Contacto(nombre: "Laura1", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura2", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura3", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura4", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura5", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura6", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura7", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+                new Contacto(nombre: "Laura8", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino")
+            };
+            //Asignamos la lista al ListBox(llamado ListaCitasInterfaz en el XAML)
+            ListaContactosInterfaz.ItemsSource = ListaContactos;
         }
     }
 }

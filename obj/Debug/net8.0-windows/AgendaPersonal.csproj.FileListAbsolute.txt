@@ -25,3 +25,30 @@ C:\Users\laura.rodriguez_alum\Desktop\INTERFACES\REPOSITORIOS\AgendaPersonal\obj
 C:\Users\laura.rodriguez_alum\Desktop\INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Menu.g.cs
 C:\Users\laura.rodriguez_alum\Desktop\INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Citas.baml
 C:\Users\laura.rodriguez_alum\Desktop\INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Menu.baml
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\bin\Debug\net8.0-windows\AgendaPersonal.exe
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\bin\Debug\net8.0-windows\AgendaPersonal.deps.json
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\bin\Debug\net8.0-windows\AgendaPersonal.runtimeconfig.json
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\bin\Debug\net8.0-windows\AgendaPersonal.dll
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\bin\Debug\net8.0-windows\AgendaPersonal.pdb
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Citas.g.cs
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Contactos.g.cs
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Menu.g.cs
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal_MarkupCompile.cache
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal_MarkupCompile.lref
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Citas.baml
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Contactos.baml
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\Menu.baml
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.g.resources
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.AssemblyInfoInputs.cache
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.AssemblyInfo.cs
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.csproj.CoreCompileInputs.cache
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.sourcelink.json
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.dll
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\refint\AgendaPersonal.dll
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.pdb
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.genruntimeconfig.cache
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\ref\AgendaPersonal.dll
