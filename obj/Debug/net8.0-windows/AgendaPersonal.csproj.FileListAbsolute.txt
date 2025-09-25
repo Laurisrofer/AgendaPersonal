@@ -52,3 +52,12 @@ C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\ob
 C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.pdb
 C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.genruntimeconfig.cache
 C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\ref\AgendaPersonal.dll
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\Contactos.g.cs
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\Menu.g.cs
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal_MarkupCompile.cache
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal_MarkupCompile.lref
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.dll
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\refint\AgendaPersonal.dll
+C:\Users\laura.rodriguez_alum\source\repos\Laurisrofer\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.pdb
