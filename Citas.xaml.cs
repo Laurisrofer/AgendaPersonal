@@ -27,7 +27,7 @@ namespace AgendaPersonal
             InitializeComponent();
             //Crear una lista para almacenar las citas vacía
             //List<Cita> ListaCitas = new List<Cita>();
-            //Crear una lista con valores por defecto
+            //Asignar una lista con valores por defecto
             ListaCitas = new ObservableCollection<Cita>
             {
                 new Cita(titulo: "Comida", fecha: DateTime.Now, descripcion: "Comida en el restaurante"),
@@ -44,5 +44,6 @@ namespace AgendaPersonal
             TxtDescripcionCita.Clear();
             DatePickerCita.SelectedDate = null;
         }
+
     }
 }
