@@ -9,7 +9,16 @@
       Title="Contactos">
 
     <Grid>
-        <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer 
+            VerticalScrollBarVisibility="Auto" 
+            Margin="0,10,0,10"
+            Grid.Column="0"
+            VerticalAlignment="Center"
+            >
             <StackPanel>
                 <TextBlock 
                     Text="Página de Contactos"
@@ -20,6 +29,7 @@
                     />
                 <ListBox
                     x:Name="ListaContactosInterfaz"
+                    SelectionChanged="ListaContactosInterfaz_SelectionChanged_1"
                     >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -95,9 +105,42 @@
                 />
                 <Button 
                 Content="Agregar Cita"
-                Margin="10,20,0,0" Click="Button_Click"
+                Margin="10,10,0,0" Click="Button_Click"
                 />
             </StackPanel>
         </ScrollViewer>
+        <StackPanel
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            >
+            <TextBlock
+                Text="Detalles del Contacto"
+                FontSize="20"
+             />
+            <TextBlock
+                x:Name="DetalleNombre"
+                Text="Nombre:"
+                FontSize="16"
+                Margin="10,20,10,0"
+             />
+            <TextBlock
+                x:Name="DetalleApellidos"
+                Text="Apellidos:"
+                FontSize="16"
+                Margin="10,20,10,0"
+             />
+            <TextBlock
+                x:Name="DetalleGenero"
+                Text="Genero:"
+                FontSize="16"
+                Margin="10,20,10,0"
+             />
+            <TextBlock
+                x:Name="DetalleFecha"
+                Text="Creado el:"
+                FontSize="12"
+                Margin="10,20,10,0"
+             />
+        </StackPanel>
     </Grid>
 </Page>

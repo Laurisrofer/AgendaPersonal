@@ -51,5 +51,17 @@ namespace AgendaPersonal
             DatePickerContacto.SelectedDate = null;
             TxtGenero.Clear();
         }
+
+        private void ListaContactosInterfaz_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            Contacto contactoSeleccionado = (Contacto)ListaContactosInterfaz.SelectedItem;
+            if (contactoSeleccionado != null)
+            {
+                DetalleNombre.Text = "Nombre: " + contactoSeleccionado.Nombre;
+                DetalleApellidos.Text = "Apellidos: " + contactoSeleccionado.Apellido1 + " " + contactoSeleccionado.Apellido2;
+                DetalleGenero.Text = "Género: " + contactoSeleccionado.Genero;
+                DetalleFecha.Text = "Fecha de creación: " + contactoSeleccionado.Creacion.ToString("U");
+            }
+        }
     }
 }

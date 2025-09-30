@@ -7,10 +7,14 @@
         mc:Ignorable="d"
         Title="Agenda Personal" Height="450" Width="800">
 
+    <!--<Window.Resources>
+        --><!--Para poner stilos al main--><!--
+    </Window.Resources>-->
+    
     <Grid Margin="20">
         <!-- Definimos la cuadrícula principal -->
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
+         <!--<RowDefinition Height="Auto"/>-->
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -20,23 +24,23 @@
         </Grid.ColumnDefinitions>
 
         <!-- Título arriba -->
-        <TextBlock 
+        <!--<TextBlock 
             Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
             Text="Aplicación de Agenda Personal"
             FontSize="20"
             FontWeight="Bold"
             HorizontalAlignment="Center"
-            Margin="0 10"/>
+            Margin="0 10"/>-->
 
         <!-- Menú lateral con botones -->
-        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Top" >
-            <Button Content="Menú" Margin="5" Height="40" Click="Button_Click_1"/>
+        <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" >
+            <Button Style="{StaticResource CancelarButton}" Content="Menú" Margin="5" Height="40" Click="Button_Click_1"/>
             <Button Content="Contactos" Margin="5" Height="40" Click="Button_Click"/>
             <Button Content="Citas" Margin="5" Height="40" Click="Button_Click_2"/>
         </StackPanel>
 
         <Frame
-            Grid.Row="1"
+            Grid.Row="0"
             Grid.Column="1"
             x:Name="MainFrame"
             NavigationUIVisibility="Hidden"
