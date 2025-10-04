@@ -44,6 +44,15 @@ namespace AgendaPersonal
             TxtDescripcionCita.Clear();
             DatePickerCita.SelectedDate = null;
         }
-
-    }
+        private void ListaCitasInterfaz_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        {
+            Cita citaSeleccionada = (Cita)ListaCitasInterfaz.SelectedItem;
+            if (citaSeleccionada != null)
+            {
+                DetalleTitulo.Text = "Título: " + citaSeleccionada.Titulo;
+                DetalleDescripcion.Text = "Descripción: " + citaSeleccionada.Descripcion;
+                DetalleFecha.Text = "Fecha de cita: " + citaSeleccionada.Fecha.ToString("U");
+            }
+        }
+     }
 }

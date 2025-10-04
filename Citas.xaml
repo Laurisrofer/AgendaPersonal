@@ -9,6 +9,10 @@
       Title="Citas">
 
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         <ScrollViewer VerticalScrollBarVisibility="Auto">
             <StackPanel>
                 <TextBlock Text="Página de Citas"
@@ -19,6 +23,7 @@
                            />
                 <ListBox
                      x:Name="ListaCitasInterfaz"
+                     SelectionChanged="ListaCitasInterfaz_SelectionChanged_1"
                      >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -67,5 +72,32 @@
                 />
             </StackPanel>
         </ScrollViewer>
+        <StackPanel
+            Grid.Column="1"
+            VerticalAlignment="Center"
+            >
+            <TextBlock
+            Text="Detalles de la Cita"
+            FontSize="20"
+            />
+            <TextBlock
+            x:Name="DetalleTitulo"
+            Text="Titulo:"
+            FontSize="16"
+            Margin="10,20,10,0"
+            />
+            <TextBlock
+            x:Name="DetalleDescripcion"
+            Text="Descripcion:"
+            FontSize="16"
+            Margin="10,20,10,0"
+            />
+            <TextBlock
+            x:Name="DetalleFecha"
+            Text="Fecha de la cita:"
+            FontSize="12"
+            Margin="10,20,10,0"
+            />
+        </StackPanel>
     </Grid>
 </Page>

@@ -104,7 +104,7 @@
                 Margin="10,10,10,10"
                 />
                 <Button 
-                Content="Agregar Cita"
+                Content="Agregar Contacto"
                 Margin="10,10,0,0" Click="Button_Click"
                 />
             </StackPanel>

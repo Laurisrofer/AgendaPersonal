@@ -89,3 +89,4 @@ C:\Users\laura.rodriguez_alum\Source\Repos\AgendaPersonal\obj\Debug\net8.0-windo
 C:\Users\laura.rodriguez_alum\Source\Repos\AgendaPersonal\obj\Debug\net8.0-windows\AgendaPersonal.genruntimeconfig.cache
 C:\Users\laura.rodriguez_alum\Source\Repos\AgendaPersonal\obj\Debug\net8.0-windows\ref\AgendaPersonal.dll
 C:\Users\laura.rodriguez_alum\Source\Repos\AgendaPersonal\obj\Debug\net8.0-windows\App.baml
+C:\Users\lauri\Desktop\2ºB\DESARROLLO INTERFACES\REPOSITORIOS\AgendaPersonal\obj\Debug\net8.0-windows\App.baml
