@@ -3,11 +3,15 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AgendaPersonal"
+      xmlns:local="clr-namespace:AgendaPersonal.MVVM"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Citas">
 
+	<Page.DataContext>
+		<local:CitasViewModel/>
+	</Page.DataContext>
+	
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
@@ -23,7 +27,8 @@
                            />
                 <ListBox
                      x:Name="ListaCitasInterfaz"
-                     SelectionChanged="ListaCitasInterfaz_SelectionChanged_1"
+                    ItemsSource="{Binding Citas}"
+                    SelectedItem="{Binding CitaSeleccionada}"
                      >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -67,8 +72,10 @@
                 Margin="10,10,10,10"
                 />
                 <Button 
+				Style="{StaticResource  CancelarButton}"
                 Content="Agregar Cita"
-                Margin="10,20,0,0" Click="Button_Click"
+                Margin="10,20,0,0" 
+				Command="{Binding AgregarCitaCommand}"
                 />
             </StackPanel>
         </ScrollViewer>
@@ -80,12 +87,18 @@
             Text="Detalles de la Cita"
             FontSize="20"
             />
-            <TextBlock
-            x:Name="DetalleTitulo"
-            Text="Titulo:"
-            FontSize="16"
-            Margin="10,20,10,0"
-            />
+			<StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="DetalleTitulo"
+                    Text="Titulo:"
+                    FontSize="16"
+                    Margin="10,20,10,0"
+                />
+				<TextBox
+                    Text="{Binding CitaSeleccionada.Titulo,
+                            Mode=TwoWay}"
+                   />
+			</StackPanel>
             <TextBlock
             x:Name="DetalleDescripcion"
             Text="Descripcion:"

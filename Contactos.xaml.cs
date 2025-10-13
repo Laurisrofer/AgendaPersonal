@@ -26,42 +26,43 @@ namespace AgendaPersonal
         {
             InitializeComponent();
 
-            //Asignar una lista con valores por defecto
-             ListaContactos = new ObservableCollection<Contacto>
-            {
-                new Contacto(nombre: "Laura1", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura2", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura3", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura4", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura5", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura6", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura7", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
-                new Contacto(nombre: "Laura8", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino")
-            };
-            //Asignamos la lista al ListBox(llamado ListaCitasInterfaz en el XAML)
-            ListaContactosInterfaz.ItemsSource = ListaContactos;
+            ////Asignar una lista con valores por defecto
+            // ListaContactos = new ObservableCollection<Contacto>
+            //{
+            //    new Contacto(nombre: "Laura1", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura2", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura3", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura4", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura5", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura6", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura7", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino"),
+            //    new Contacto(nombre: "Laura8", apellido1: "Rodriguez", apellido2: "Fernandez", creacion: DateTime.Now, genero: "Femenino")
+            //};
+            ////Asignamos la lista al ListBox(llamado ListaCitasInterfaz en el XAML)
+            //ListaContactosInterfaz.ItemsSource = ListaContactos;
+            ComboGenero.ItemsSource = new List<string> { "Femenino", "Masculino", "Otro" };
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ListaContactos.Add(new Contacto(nombre: TxtNombreContacto.Text, apellido1: TxtApellido1.Text, apellido2: TxtApellido2.Text, creacion: DatePickerContacto.SelectedDate ?? DateTime.Now, genero: TxtGenero.Text));
-            TxtNombreContacto.Clear();
-            TxtApellido1.Clear();
-            TxtApellido2.Clear();
-            DatePickerContacto.SelectedDate = null;
-            TxtGenero.Clear();
-        }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ListaContactos.Add(new Contacto(nombre: TxtNombreContacto.Text, apellido1: TxtApellido1.Text, apellido2: TxtApellido2.Text, creacion: DatePickerContacto.SelectedDate ?? DateTime.Now, genero: TxtGenero.Text));
+        //    TxtNombreContacto.Clear();
+        //    TxtApellido1.Clear();
+        //    TxtApellido2.Clear();
+        //    DatePickerContacto.SelectedDate = null;
+        //    TxtGenero.Clear();
+        //}
 
-        private void ListaContactosInterfaz_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-            Contacto contactoSeleccionado = (Contacto)ListaContactosInterfaz.SelectedItem;
-            if (contactoSeleccionado != null)
-            {
-                DetalleNombre.Text = "Nombre: " + contactoSeleccionado.Nombre;
-                DetalleApellidos.Text = "Apellidos: " + contactoSeleccionado.Apellido1 + " " + contactoSeleccionado.Apellido2;
-                DetalleGenero.Text = "Género: " + contactoSeleccionado.Genero;
-                DetalleFecha.Text = "Fecha de creación: " + contactoSeleccionado.Creacion.ToString("U");
-            }
-        }
+        //private void ListaContactosInterfaz_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        //{
+        //    Contacto contactoSeleccionado = (Contacto)ListaContactosInterfaz.SelectedItem;
+        //    if (contactoSeleccionado != null)
+        //    {
+        //        DetalleNombre.Text = "Nombre: " + contactoSeleccionado.Nombre;
+        //        DetalleApellidos.Text = "Apellidos: " + contactoSeleccionado.Apellido1 + " " + contactoSeleccionado.Apellido2;
+        //        DetalleGenero.Text = "Género: " + contactoSeleccionado.Genero;
+        //        DetalleFecha.Text = "Fecha de creación: " + contactoSeleccionado.Creacion.ToString("U");
+        //    }
+        //}
     }
 }

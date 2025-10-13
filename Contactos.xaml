@@ -3,10 +3,14 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:AgendaPersonal"
+      xmlns:local="clr-namespace:AgendaPersonal.MVVM"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Contactos">
+
+    <Page.DataContext>
+        <local:ContactosViewModel/>
+    </Page.DataContext>
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -26,10 +30,11 @@
                     VerticalAlignment="Center"
                     FontSize="24"
                     FontWeight="Bold"
-                    />
+                />
                 <ListBox
                     x:Name="ListaContactosInterfaz"
-                    SelectionChanged="ListaContactosInterfaz_SelectionChanged_1"
+                    ItemsSource="{Binding Contactos}"
+                    SelectedItem="{Binding ContactoSeleccionado}"
                     >
                     <ListBox.ItemTemplate>
                         <DataTemplate>
@@ -47,41 +52,50 @@
                 FontWeight="Bold"
                 Margin="0,20,10,10"
                 />
-                <TextBlock 
-                Text="Nombre"
-                FontSize="14"
-                FontWeight="Medium"
-                Margin="10,20,10,0"
-                />
-                <TextBox
-                x:Name="TxtNombreContacto"
-                Margin="10,10,10,10"
-                />
-                <TextBlock 
-                Text="Apellido1"
-                FontSize="14"
-                FontWeight="Medium"
-                Margin="10,20,10,0"
-                />
-                <TextBox 
-                x:Name="TxtApellido1"
-                FontSize="14"
-                FontWeight="Medium"
-                Margin="10,10,10,10"
-                />
-                <TextBlock 
-                Text="Apellido2"
-                FontSize="14"
-                FontWeight="Medium"
-                Margin="10,20,10,0"
-                />
-                <TextBox 
-                x:Name="TxtApellido2"
-                FontSize="14"
-                FontWeight="Medium"
-                Margin="10,10,10,10"
-                />
-                <TextBlock 
+                <StackPanel Orientation="Horizontal">
+                    <StackPanel x:Name="ContNombre" Width="150">
+                        <TextBlock 
+                        Text="Nombre"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Margin="10,20,10,0"
+                        />
+                        <TextBox
+                        x:Name="TxtNombreContacto"
+                        Margin="10,10,10,10"
+                        />
+                    </StackPanel>
+                    <StackPanel x:Name="ContApellido1" Width="150">
+                        <TextBlock 
+                        Text="Apellido1"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Margin="10,20,10,0"
+                        />
+                        <TextBox 
+                        x:Name="TxtApellido1"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Margin="10,10,10,10"
+                        />
+                    </StackPanel>
+                    <StackPanel x:Name="ContApellido2" Width="150">
+
+                        <TextBlock 
+                        Text="Apellido2"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Margin="10,20,10,0"
+                        />
+                        <TextBox 
+                        x:Name="TxtApellido2"
+                        FontSize="14"
+                        FontWeight="Medium"
+                        Margin="10,10,10,10"
+                        />
+                    </StackPanel>
+                </StackPanel>
+                <!--<TextBlock 
                 Text="Creación"
                 FontSize="14"
                 FontWeight="Medium"
@@ -90,22 +104,28 @@
                 <DatePicker 
                 x:Name="DatePickerContacto"
                 Margin="10,10,10,10"
-                />
+                />-->
                 <TextBlock 
                 Text="Género"
                 FontSize="14"
                 FontWeight="Medium"
                 Margin="10,20,10,0"
                 />
-                <TextBox 
+                <ComboBox
+                    x:Name="ComboGenero"
+                    Margin="10,20,10,0"
+                />
+                <!--<TextBox 
                 x:Name="TxtGenero"
                 FontSize="14"
                 FontWeight="Medium"
                 Margin="10,10,10,10"
-                />
+                />-->
                 <Button 
+                Style="{StaticResource  CancelarButton}"
                 Content="Agregar Contacto"
-                Margin="10,10,0,0" Click="Button_Click"
+                Margin="10,10,0,0"
+                Command="{Binding AgregarContactoCommand}"
                 />
             </StackPanel>
         </ScrollViewer>
@@ -117,12 +137,18 @@
                 Text="Detalles del Contacto"
                 FontSize="20"
              />
-            <TextBlock
-                x:Name="DetalleNombre"
-                Text="Nombre:"
-                FontSize="16"
-                Margin="10,20,10,0"
-             />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="DetalleNombre"
+                    Text="Nombre:"
+                    FontSize="16"
+                    Margin="10,20,10,0"
+                 />
+                <TextBox 
+                    Text="{Binding ContactoSeleccionado.Nombre,
+                            Mode=TwoWay}"
+                   />
+            </StackPanel>
             <TextBlock
                 x:Name="DetalleApellidos"
                 Text="Apellidos:"

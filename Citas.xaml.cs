@@ -25,34 +25,34 @@ namespace AgendaPersonal
         public Citas()
         {
             InitializeComponent();
-            //Crear una lista para almacenar las citas vacía
-            //List<Cita> ListaCitas = new List<Cita>();
-            //Asignar una lista con valores por defecto
-            ListaCitas = new ObservableCollection<Cita>
-            {
-                new Cita(titulo: "Comida", fecha: DateTime.Now, descripcion: "Comida en el restaurante"),
-                new Cita(titulo: "Reunion", fecha: DateTime.Now.AddDays(1), descripcion: "Reunion con Tere"),
-            };
-            //Asignar la lista al ListBox(llamado ListaCitasInterfaz en el XAML)
-            ListaCitasInterfaz.ItemsSource = ListaCitas;
+            ////Crear una lista para almacenar las citas vacía
+            ////List<Cita> ListaCitas = new List<Cita>();
+            ////Asignar una lista con valores por defecto
+            //ListaCitas = new ObservableCollection<Cita>
+            //{
+            //    new Cita(titulo: "Comida", fecha: DateTime.Now, descripcion: "Comida en el restaurante"),
+            //    new Cita(titulo: "Reunion", fecha: DateTime.Now.AddDays(1), descripcion: "Reunion con Tere"),
+            //};
+            ////Asignar la lista al ListBox(llamado ListaCitasInterfaz en el XAML)
+            //ListaCitasInterfaz.ItemsSource = ListaCitas;
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            ListaCitas.Add(new Cita(titulo: TxtTituloCita.Text, fecha: DatePickerCita.SelectedDate ?? DateTime.Now, descripcion: TxtDescripcionCita.Text));
-            TxtTituloCita.Clear();
-            TxtDescripcionCita.Clear();
-            DatePickerCita.SelectedDate = null;
-        }
-        private void ListaCitasInterfaz_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
-        {
-            Cita citaSeleccionada = (Cita)ListaCitasInterfaz.SelectedItem;
-            if (citaSeleccionada != null)
-            {
-                DetalleTitulo.Text = "Título: " + citaSeleccionada.Titulo;
-                DetalleDescripcion.Text = "Descripción: " + citaSeleccionada.Descripcion;
-                DetalleFecha.Text = "Fecha de cita: " + citaSeleccionada.Fecha.ToString("U");
-            }
-        }
+        //private void Button_Click(object sender, RoutedEventArgs e)
+        //{
+        //    ListaCitas.Add(new Cita(titulo: TxtTituloCita.Text, fecha: DatePickerCita.SelectedDate ?? DateTime.Now, descripcion: TxtDescripcionCita.Text));
+        //    TxtTituloCita.Clear();
+        //    TxtDescripcionCita.Clear();
+        //    DatePickerCita.SelectedDate = null;
+        //}
+        //private void ListaCitasInterfaz_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
+        //{
+        //    Cita citaSeleccionada = (Cita)ListaCitasInterfaz.SelectedItem;
+        //    if (citaSeleccionada != null)
+        //    {
+        //        DetalleTitulo.Text = "Título: " + citaSeleccionada.Titulo;
+        //        DetalleDescripcion.Text = "Descripción: " + citaSeleccionada.Descripcion;
+        //        DetalleFecha.Text = "Fecha de cita: " + citaSeleccionada.Fecha.ToString("U");
+        //    }
+        //}
      }
 }
