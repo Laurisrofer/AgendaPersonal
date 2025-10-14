@@ -146,27 +146,45 @@
                  />
                 <TextBox 
                     Text="{Binding ContactoSeleccionado.Nombre,
-                            Mode=TwoWay}"
+                    Mode=TwoWay}"
                    />
             </StackPanel>
-            <TextBlock
-                x:Name="DetalleApellidos"
-                Text="Apellidos:"
-                FontSize="16"
-                Margin="10,20,10,0"
-             />
-            <TextBlock
-                x:Name="DetalleGenero"
-                Text="Genero:"
-                FontSize="16"
-                Margin="10,20,10,0"
-             />
-            <TextBlock
-                x:Name="DetalleFecha"
-                Text="Creado el:"
-                FontSize="12"
-                Margin="10,20,10,0"
-             />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="DetalleApellidos"
+                    Text="Apellidos:"
+                    FontSize="16"
+                    Margin="10,20,10,0"
+                 />
+                <TextBox 
+                    Text="{Binding ContactoSeleccionado.Apellido1,
+                    Mode=TwoWay}"
+                />           
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="DetalleGenero"
+                    Text="Genero:"
+                    FontSize="16"
+                    Margin="10,20,10,0"
+                />
+                <ComboBox
+                    SelectedItem="{Binding ContactoSeleccionado.Genero,
+                    Mode=TwoWay}"
+                />
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="DetalleFecha"
+                    Text="Creado el:"
+                    FontSize="12"
+                    Margin="10,20,10,0"
+                 />
+                <DatePicker
+                    SelectedDate="{Binding ContactoSeleccionado.Creacion,
+                    Mode=TwoWay}"
+                 />     
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

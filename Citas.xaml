@@ -96,21 +96,33 @@
                 />
 				<TextBox
                     Text="{Binding CitaSeleccionada.Titulo,
-                            Mode=TwoWay}"
-                   />
+                    Mode=TwoWay}"
+                 />
 			</StackPanel>
-            <TextBlock
-            x:Name="DetalleDescripcion"
-            Text="Descripcion:"
-            FontSize="16"
-            Margin="10,20,10,0"
-            />
-            <TextBlock
-            x:Name="DetalleFecha"
-            Text="Fecha de la cita:"
-            FontSize="12"
-            Margin="10,20,10,0"
-            />
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                x:Name="DetalleDescripcion"
+                Text="Descripcion:"
+                FontSize="16"
+                Margin="10,20,10,0"
+                />
+                <TextBox
+                    Text="{Binding CitaSeleccionada.Descripcion,
+                    Mode=TwoWay}"
+                 />         
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock
+                    x:Name="DetalleFecha"
+                    Text="Fecha de la cita:"
+                    FontSize="12"
+                    Margin="10,20,10,0"
+                />
+                <DatePicker
+                    SelectedDate="{Binding CitaSeleccionada.Fecha,
+                    Mode=TwoWay}"
+                 />
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>
