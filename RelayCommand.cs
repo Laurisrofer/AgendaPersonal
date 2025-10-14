@@ -34,7 +34,7 @@ namespace AgendaPersonal
             }
             else
             {
-                return false;
+                return true;
             }
         }
 
